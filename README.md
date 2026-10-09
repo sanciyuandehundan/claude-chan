@@ -13,8 +13,10 @@
 Windows，需要 Python 3 和 Pillow（`pip install pillow`）。
 
 ```
-/plugin install claude-chan --marketplace sanciyuandehundan/claude-chan
+/plugin install quota-chan --marketplace sanciyuandehundan/claude-chan
 ```
+
+（插件 id 叫 `quota-chan`，因为 Claude Code 不允许第三方插件以 `claude-` 开头。）
 
 在 Claude Code 终端里输入，回答 `y` 添加市场，再选一个安装范围（选 user 就每个会话都有）。
 

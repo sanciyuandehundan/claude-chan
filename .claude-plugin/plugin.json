@@ -1,5 +1,5 @@
 {
-  "name": "claude-chan",
+  "name": "quota-chan",
   "version": "0.2.0",
   "description": "Claude 酱：贴在 Claude 桌面版右下角的像素记账大小姐，显示 5 小时 / 本周 / Fable 额度，点她会说话",
   "author": { "name": "次混" },

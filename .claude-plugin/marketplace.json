@@ -3,7 +3,7 @@
   "owner": { "name": "次混" },
   "plugins": [
     {
-      "name": "claude-chan",
+      "name": "quota-chan",
       "source": "./",
       "description": "Claude 酱：贴在 Claude 桌面版右下角的像素记账大小姐，显示额度，点她会说话"
     }
