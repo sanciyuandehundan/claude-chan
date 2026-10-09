@@ -1,0 +1,10 @@
+# 引擎加载插件时放进来的类型声明（含本机的 MCP 工具列表），不是源码
+.claude-plugin/types/
+tsconfig.json
+
+# Python
+__pycache__/
+*.pyc
+
+# art.py 导出的预览（preview/ 里手动挑的几张除外）
+widget/preview/

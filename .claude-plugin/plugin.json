@@ -1,0 +1,20 @@
+{
+  "name": "clawd-chan",
+  "version": "0.2.0",
+  "description": "Clawd 酱：贴在 Claude 桌面版右下角的像素记账大小姐，显示 5 小时 / 本周 / Fable 额度，点她会说话",
+  "author": { "name": "次混" },
+  "userConfig": {
+    "autostart": {
+      "type": "boolean",
+      "title": "会话启动时拉起挂件",
+      "description": "每次 Code 会话启动时拉起挂件（挂件自己会去重，不会开第二个）",
+      "default": true
+    },
+    "python": {
+      "type": "string",
+      "title": "pythonw.exe 路径",
+      "description": "用来跑挂件的 pythonw.exe（要装了 Pillow），默认从 PATH 找",
+      "default": "pythonw.exe"
+    }
+  }
+}
