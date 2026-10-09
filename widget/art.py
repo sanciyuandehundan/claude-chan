@@ -1,4 +1,4 @@
-"""Clawd 酱的像素立绘（第四版）：表情包里那位橙发大小姐的 Q 版像素化，头顶站着戴王冠的小 Clawd。
+"""Claude 酱的像素立绘（第四版）：表情包里那位橙发大小姐的 Q 版像素化，头顶站着戴王冠的小 Clawd。
 
 画法参照日系像素画的习惯：
 - 头发是一个整体：后发、鬓发、刘海各画一层但都不单独描边，合成之后只沿整头头发的
@@ -1130,7 +1130,7 @@ if __name__ == "__main__":
     big = scaled("smug", 0, 6)
     bg = Image.new("RGBA", big.size, (31, 31, 30, 255))
     bg.alpha_composite(big)
-    bg.save(out / "clawd_chan_big.png")
+    bg.save(out / "claude_chan_big.png")
     sil = silhouette("smug", 3)
     bg = Image.new("RGBA", (sil.width * 2 + 20, sil.height), (200, 200, 200, 255))
     bg.alpha_composite(sil, (0, 0))

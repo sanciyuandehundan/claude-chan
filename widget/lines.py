@@ -1,4 +1,4 @@
-"""Clawd 酱的台词。{p5} 这类占位符由挂件按当前额度填进去。"""
+"""Claude 酱的台词。{p5} 这类占位符由挂件按当前额度填进去。"""
 from __future__ import annotations
 
 import random

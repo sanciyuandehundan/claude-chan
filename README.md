@@ -1,8 +1,8 @@
-# Clawd 酱额度挂件
+# Claude 酱额度挂件
 
 贴在 Claude 桌面版窗口右下角的像素记账大小姐：橙发、抱着账本、头顶站着戴王冠的小 Clawd。气泡里显示 5 小时额度的重置倒计时和已用百分比、本周和 Fable 的进度条；点她会说话、跳一下、撒粒子、放音效。
 
-![Clawd 酱](preview/clawd_chan_big.png)
+![Claude 酱](preview/claude_chan_big.png)
 
 角色原型来源于 B 站 UP 主 [ZipZipPipe](https://space.bilibili.com/4168597)。本项目是该角色的 Q 版像素二创，加上了 Claude 的小 Clawd。
 
@@ -13,7 +13,7 @@
 Windows，需要 Python 3 和 Pillow（`pip install pillow`）。
 
 ```
-/plugin install clawd-chan --marketplace sanciyuandehundan/clawd-chan
+/plugin install claude-chan --marketplace sanciyuandehundan/claude-chan
 ```
 
 在 Claude Code 终端里输入，回答 `y` 添加市场，再选一个安装范围（选 user 就每个会话都有）。

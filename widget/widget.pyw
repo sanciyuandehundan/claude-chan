@@ -1,4 +1,4 @@
-"""Clawd 酱额度挂件：贴在 Claude 桌面版窗口右下角的像素小人和气泡。
+"""Claude 酱额度挂件：贴在 Claude 桌面版窗口右下角的像素小人和气泡。
 
 - 额度来自 ~/.claude/clawd-widget/usage.json，由同一个插件的 hooks 在每个 Code 会话里写入。
 - 只跟着 Claude 窗口走：Claude 在前台时置顶，切到别的软件就退到 Claude 正上方，
@@ -615,10 +615,10 @@ class App:
         wc.cbSize = ctypes.sizeof(WNDCLASSEXW)
         wc.lpfnWndProc = self._wndproc
         wc.hInstance = hinst
-        wc.lpszClassName = "ClawdMeterWidget"
+        wc.lpszClassName = "ClaudeChanWidget"
         user32.RegisterClassExW(ctypes.byref(wc))
         self.hwnd = user32.CreateWindowExW(
-            WS_EX_LAYERED | WS_EX_TOOLWINDOW | WS_EX_NOACTIVATE, "ClawdMeterWidget", "Clawd 酱", WS_POPUP,
+            WS_EX_LAYERED | WS_EX_TOOLWINDOW | WS_EX_NOACTIVATE, "ClaudeChanWidget", "Claude 酱", WS_POPUP,
             0, 0, 10, 10, None, None, hinst, None)
         user32.SetTimer(self.hwnd, 1, 30, None)
         self._fg_hook = WINEVENTPROC(lambda *a: self.safe(self.update_z, True))
@@ -1113,7 +1113,7 @@ class App:
 
 
 def main():
-    kernel32.CreateMutexW(None, False, "Local\\ClawdMeterWidget")
+    kernel32.CreateMutexW(None, False, "Local\\ClaudeChanWidget")
     if ctypes.get_last_error() == 183:  # ERROR_ALREADY_EXISTS：已经开着一个了
         return
     user32.SetProcessDpiAwarenessContext(ctypes.c_void_p(-4))

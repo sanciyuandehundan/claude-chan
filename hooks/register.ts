@@ -58,7 +58,7 @@ async function launchWidget($: EngineInterface, options: Options) {
   )
   if (r.exitCode !== 0) {
     const why = r.stderr.trim().split('\n')[0] ?? ''
-    $.ui.toast(`Clawd 酱没拉起来：${why}（挂件要 Python 3 + Pillow，python 路径可在插件设置里改）`)
+    $.ui.toast(`Claude 酱没拉起来：${why}（挂件要 Python 3 + Pillow，python 路径可在插件设置里改）`)
   }
 }
 
