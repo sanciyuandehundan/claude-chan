@@ -4,6 +4,8 @@
 
 ![Clawd 酱](preview/clawd_chan_big.png)
 
+角色原型来源于 B 站 UP 主 [ZipZipPipe](https://space.bilibili.com/4168597) 的表情包（那位抱着书、说"我依旧是世一模"的橙发大小姐），本项目是它的 Q 版像素二创，加上了 Claude 的小 Clawd。
+
 挂件不在会话界面里，而是一个独立的透明小窗，跟着 Claude 窗口走：Claude 在前台时浮在最上面，切到别的软件就退到 Claude 后面，最小化时隐藏。所以 Chat 页面也能看到。
 
 ## 安装
